@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pelaksanaan Kinerja B 15 MA Tahun 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<script>
+function scrollIndikator(direction) {
+  const container = document.getElementById("indikatorContainer");
+  const scrollAmount = 220;
+  container.scrollLeft += direction * scrollAmount;
+}
+</script>
+
+<body>
+<script>
+function handleSearch() {
+  const q = document.getElementById("searchInput").value.toLowerCase().trim();
+
+  const routes = {
+    "ppid": "https://ppid.bps.go.id/?mfd=3276&_gl=1*owq6bk*_ga*MTA5MDE0OTM5Mi4xNzYxNTI5ODAz*_ga_XXTTVXWHDB*czE3Njc0NDkyNDYkbzM4JGcxJHQxNzY3NDQ5NTMwJGo0JGwwJGgw",
+    "gojags": "https://gojags.web.bps.go.id/",
+    "pst": "pst.html",
+    "laporan kinerja": "laporan-kinerja.html",
+    "realisasi": "realisasi.html",
+    "indikator": "indikator.html",
+    "quality gates": "quality-gates.html",
+    "desa cantik": "desa-cantik.html",
+    "pojok statistik": "pojok-statistik.html"
+  };
+
+  for (let key in routes) {
+    if (q.includes(key)) {
+      window.location.href = routes[key];
+      return;
+    }
+  }
+
+  alert("Data tidak ditemukan. Silakan periksa kata kunci.");
+}
+</script>
+
+<!-- ===== HEADER STICKY (NAVBAR + INFO) ===== -->
+<div class="header-sticky">
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">📊</span>
+      <div class="logo-text">
+        <strong>OTEWE LABUAN BAJO</strong><br>
+        <small>Pelaksanaan Kinerja B 15 MA</small>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <ul class="nav-menu">
+
+        <li class="dropdown">
+          <a href="#">Beranda ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profil B 15 MA</a></li>
+            <li><a href="#">Visi & Misi</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Rencana Kinerja ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://sites.google.com/view/dda3276-2026/home">Depok Dalam Angka</a></li>
+            <li><a href="https://script.google.com/macros/s/AKfycbyBLsVLPHEmA2c0S-0Qi-70hb35u5-2uUsUOpKGvizHksB01vsWFMri7jHLnS3wYAAvug/exec">Pelayanan Statistik Terpadu (PST)</a></li>
+            <li><a href="https://skd.bps.go.id/SKD2025/">Survei Kebutuhan Data</a></li>
+            <li><a href="https://depokkota.archive.bps.go.id/backend/index.php/site/login">Update Konten Website</a></li>
+            <li><a href=" https://nqaf.web.bps.go.id/qgate/ ">Quality Gates</a></li>
+	    <li><a href="https://karissa.web.bps.go.id/index.php/login">Karissa</a></li>
+ 	    <li><a href="https://portalpublikasi.bps.go.id/simpub/index.php/site/login">Portal Publikasi</a></li>
+	    <li><a href="https://depokkota.bps.go.id/id">PEKPPP</a></li>
+	    <li><a href="https://depokkota.bps.go.id/id">Kecamatan Dalam Angka</a></li>
+	    <li><a href="https://indah.bps.go.id/login">Metadata</a></li>
+	    <li><a href="https://depokkota.bps.go.id/id">Pojok Statistik</a></li>
+	    <li><a href="https://depokkota.bps.go.id/id">Desa Cantik</a></li>
+	    <li><a href="https://depokkota.bps.go.id/id">Pembinaan Statistik Sektoral</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Realisasi ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Realisasi Triwulan I</a></li>
+            <li><a href="#">Realisasi Triwulan II</a></li>
+            <li><a href="#">Realisasi Triwulan III</a></li>
+            <li><a href="#">Realisasi Triwulan IV</a></li>
+            <li><a href="#">Capaian Indikator</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Laporan ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Laporan Kinerja</a></li>
+            <li><a href="#">Laporan Evaluasi</a></li>
+            <li><a href="#">Laporan Tahunan</a></li>
+            <li><a href="#">Dokumen Pendukung</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#">Informasi Publik ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="https://ppid.bps.go.id/?mfd=3276&_gl=1*owq6bk*_ga*MTA5MDE0OTM5Mi4xNzYxNTI5ODAz*_ga_XXTTVXWHDB*czE3Njc0NDkyNDYkbzM4JGcxJHQxNzY3NDQ5NTMwJGo0JGwwJGgw">PPID</a></li>
+	    <li><a href="https://daftarhadir.web.bps.go.id/#/login">Daftar Hadir BPS</a></li>
+	    <li><a href="https://ettd.bps.go.id/auth/login/Lw==">E-TTD</a></li>
+	    <li><a href="https://gojags.web.bps.go.id/">GOJAGS</a></li>
+	    <li><a href="https://docs.google.com/spreadsheets/d/15S6amw0mt0e11NzHG30aERZzkT97-_AY/edit?gid=1630785242#gid=1630785242">Peminjaman Ruang Rapat</a></li>
+	    <li><a href="https://s.bps.go.id/mansur_depok">Permintaan Nomor Surat</a></li>
+	    <li><a href="https://sipecut.bps.go.id/app/pegawai">SiPecut</a></li>
+	    <li><a href="https://simpeg.bps.go.id/data/">Simpeg</a></li>
+	    <li><a href="https://drive.google.com/drive/folders/1EGZbdHGLIp7J2RJ3lXAeEnsd0_J069_3">Upload SKP</a></li>
+	    <li><a href="https://mail.bps.go.id/">Zimbra</a></li>
+          </ul>
+        </li>
+<!-- ===== LANGUAGE SWITCHER ===== -->
+<div class="lang-switcher">
+  <button class="lang-btn">
+    <img src="images/flag-id.png" class="flag-icon" alt="Indonesia">
+    <span>ID</span>
+    ▾
+  </button>
+
+  <ul class="lang-dropdown">
+    <li>
+      <a href="#">
+        <img src="images/flag-id.png" class="flag-icon" alt="Indonesia">
+        Indonesia
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="images/flag-nl.png" class="flag-icon" alt="Belanda">
+        Nederlands
+      </a>
+    </li>
+  </ul>
+</div>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== INFO BANNER ===== -->
+  <section class="info-banner">
+    <p>
+      📢 Telah tersedia dokumen <strong>Pelaksanaan Kinerja B 15 MA Tahun 2026</strong>
+      sebagai bahan evaluasi dan monitoring kinerja.
+      <a href="#">Klik di sini untuk melihat dokumen</a>
+    </p>
+  </section>
+
+</div>
+<!-- ===== END HEADER STICKY ===== -->
+
+<!-- ===== HERO SECTION ===== -->
+<!-- ===== BACKGROUND SVG GEDUNG ===== -->
+<svg class="hero-bg-svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gradBuilding" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Gedung -->
+  <g fill="url(#gradBuilding)">
+    <rect x="40"  y="160" width="120" height="220" rx="6"/>
+    <rect x="190" y="120" width="160" height="260" rx="6"/>
+    <rect x="380" y="80"  width="200" height="300" rx="6"/>
+    <rect x="610" y="110" width="160" height="270" rx="6"/>
+    <rect x="800" y="150" width="130" height="230" rx="6"/>
+    <rect x="960" y="180" width="100" height="200" rx="6"/>
+  </g>
+</svg>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      Pelaksanaan Kinerja B 15 MA Tahun 2026
+    </h1>
+    <p>
+      Mewujudkan tata kelola kinerja yang akuntabel, transparan, dan
+      berbasis data untuk mendukung pengambilan kebijakan yang tepat.
+    </p>
+
+    <div class="search-box">
+  <input type="text" id="searchInput" placeholder="Cari data kinerja...">
+  <button onclick="handleSearch()">🔍</button>
+</div>
+  </div>
+<!-- ===== INDIKATOR UTAMA ===== -->
+<section class="indikator-wrapper">
+
+  <button class="indikator-btn left" onclick="scrollIndikator(-1)">‹</button>
+
+  <div class="indikator-container" id="indikatorContainer">
+
+    <div class="indikator-card">
+      <div class="ikon">📈</div>
+      <h4>Inflasi (YoY)</h4>
+      <strong>2,38%</strong>
+      <span>Nov 2025</span>
+    </div>
+
+    <div class="indikator-card">
+      <div class="ikon">🏠</div>
+      <h4>Penduduk Miskin</h4>
+      <strong>2,31%</strong>
+      <span>Mar 2025</span>
+    </div>
+
+    <div class="indikator-card">
+      <div class="ikon">💼</div>
+      <h4>TPT</h4>
+      <strong>6,52%</strong>
+      <span>Agt 2025</span>
+    </div>
+
+    <div class="indikator-card">
+      <div class="ikon">🎓</div>
+      <h4>IPM</h4>
+      <strong>84,04</strong>
+      <span>2025</span>
+    </div>
+
+    <div class="indikator-card">
+      <div class="ikon">📖</div>
+      <h4>Rata-rata Lama Sekolah</h4>
+      <strong>11,83</strong>
+      <span>2025</span>
+    </div>
+
+    <!-- TAMBAHAN BEBAS -->
+    <div class="indikator-card">
+      <div class="ikon">👶</div>
+      <h4>Usia Harapan Hidup</h4>
+      <strong>76,30</strong>
+      <span>2025</span>
+    </div>
+
+    <div class="indikator-card">
+      <div class="ikon">🏫</div>
+      <h4>Angka Harapan Lama Sekolah</h4>
+      <strong>14,21</strong>
+      <span>2025</span>
+    </div>
+
+  </div>
+
+  <button class="indikator-btn right" onclick="scrollIndikator(1)">›</button>
+
+</section>
+
+</section>
+
+<!-- ===== SECTION RINGKASAN ===== -->
+<section class="summary">
+  <div class="card">
+    <h3>Target Kinerja</h3>
+    <p>Indikator dan sasaran strategis B 15 MA Tahun 2026</p>
+  </div>
+  <div class="card">
+    <h3>Realisasi</h3>
+    <p>Capaian kinerja berdasarkan periode pelaksanaan</p>
+  </div>
+  <div class="card">
+    <h3>Evaluasi</h3>
+    <p>Hasil evaluasi dan tindak lanjut perbaikan</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p>© 2026 | Portal Pelaksanaan Kinerja</p>
+</footer>
+
+</body>
+</html>
